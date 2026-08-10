@@ -2,28 +2,27 @@
 class PorterSender < Formula
   desc "Air-gapped file transfer: sends a file as a QR slideshow in your terminal"
   homepage "https://porter.goranninkovic.com"
-  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_aarch64-apple-darwin.tar.gz"
-      sha256 "3eecef472bfa88a5ed8228ec6e4da981c07655aa5c63f5976a9e2f30dd3f69d8"
+      sha256 "02fb2da98d4aa7999bb0831de53253dfc7d8d89102277754a0b58838cac10047"
     end
     if Hardware::CPU.intel?
       url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_x86_64-apple-darwin.tar.gz"
-      sha256 "a3d5bddbcacd74b4c38c75c6825145b621dd1976a5f6a7b3509abf73e36095a0"
+      sha256 "dad3444bc5e0205a7ad801d82e7d993b5ae32805e3fa27827e77a688178c0562"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3722ca55c7c891273fd210119f775b5371869a734ee3b4fb9ce149a25df1ee12"
+      sha256 "55b0629fcf744894898952ae5edd1c0dbe339dffc41aee735e99ea35ae83411a"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "85e9de01fd301eb2e95bc3307cf8c1a97c84f201309c86f7ebcd61848737cd37"
+      sha256 "faff96e8c9c0f0f308491d91e55c6b480168ea81fa56bf490221f4141950d123"
     end
   end
 
