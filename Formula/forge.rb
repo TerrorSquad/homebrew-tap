@@ -5,21 +5,21 @@
 class Forge < Formula
   desc "Policy-driven git hook runner — fast, portable, no Node.js required."
   homepage "https://github.com/TerrorSquad/forge"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.0/forge_2.1.0_darwin_amd64.tar.gz"
-      sha256 "e1aca709d2bcbb45c5f78de9ad3962e4e8fb8de9161a70159fadf6a235c2769a"
+      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.1/forge_2.1.1_darwin_amd64.tar.gz"
+      sha256 "4127ca7a7de86ce6e3160526e54b76c9ffc0a446af39b4f1d736767a8336499b"
 
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.0/forge_2.1.0_darwin_arm64.tar.gz"
-      sha256 "74bf8c4b9f1fcf282ff3d64fae1e37df56093416bb01bca08cf88650fff4bee0"
+      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.1/forge_2.1.1_darwin_arm64.tar.gz"
+      sha256 "40bf1a461b94055e4969094a079070319088efb176e1bd1dd3a974e00aa2d6fc"
 
       define_method(:install) do
         bin.install "forge"
@@ -29,15 +29,15 @@ class Forge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.0/forge_2.1.0_linux_amd64.tar.gz"
-      sha256 "beced3cc2907060d7fde52687ca18c510f60dbaf6f6fb13e58434c06701708f6"
+      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.1/forge_2.1.1_linux_amd64.tar.gz"
+      sha256 "7cd5bcd96eccb139f1b2fbc8cd3c3f46399320215c7608ac690c5f2d8ae0e7c1"
       define_method(:install) do
         bin.install "forge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.0/forge_2.1.0_linux_arm64.tar.gz"
-      sha256 "8fb934ffb2c9799d84cc6fab4cbe421a83c9f9d23cd930309f01817fa155fc84"
+      url "https://github.com/TerrorSquad/forge/releases/download/v2.1.1/forge_2.1.1_linux_arm64.tar.gz"
+      sha256 "8b1b5134d1b2396f3157ee8b4a1965f7529046a305c8891d030a857feb975e96"
       define_method(:install) do
         bin.install "forge"
       end
