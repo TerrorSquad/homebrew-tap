@@ -6,23 +6,23 @@ class PorterSender < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_aarch64-apple-darwin.tar.gz"
-      sha256 "02fb2da98d4aa7999bb0831de53253dfc7d8d89102277754a0b58838cac10047"
+      url "https://github.com/TerrorSquad/porter/releases/download/v1.1.0/porter-sender_1.1.0_aarch64-apple-darwin.tar.gz"
+      sha256 "c7e2129e8c8f7c8ad725b687adda45d54e5cb2ec4b3de280b6cddab28dc212f1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_x86_64-apple-darwin.tar.gz"
-      sha256 "dad3444bc5e0205a7ad801d82e7d993b5ae32805e3fa27827e77a688178c0562"
+      url "https://github.com/TerrorSquad/porter/releases/download/v1.1.0/porter-sender_1.1.0_x86_64-apple-darwin.tar.gz"
+      sha256 "50a22f663d056ea36b93ed65ed329ed812bc78e21fe87d9ab4ef94a470137329"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "55b0629fcf744894898952ae5edd1c0dbe339dffc41aee735e99ea35ae83411a"
+      url "https://github.com/TerrorSquad/porter/releases/download/v1.1.0/porter-sender_1.1.0_aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f7e2babb1c3e446bed0085ccd12f7665e84abf724c2e50760cd911f81bff0c9d"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TerrorSquad/porter/releases/download/v1.0.0/porter-sender_1.0.0_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "faff96e8c9c0f0f308491d91e55c6b480168ea81fa56bf490221f4141950d123"
+      url "https://github.com/TerrorSquad/porter/releases/download/v1.1.0/porter-sender_1.1.0_x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "864a6ffd34dc46095cd4be281236f4e0c31bde79f79f56fd082df2e2ac1060f5"
     end
   end
 
